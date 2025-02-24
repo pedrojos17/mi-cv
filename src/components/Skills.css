@@ -1,0 +1,110 @@
+.skills-container {
+  text-align: center;
+  padding: 60px 20px;
+  background: #12024f;
+  color: white;
+}
+
+.skills-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #66fcf1;
+  margin-bottom: 40px;
+}
+
+/* Contenedor de iconos de habilidades */
+.skills-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Filas de iconos */
+.skills-row {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+/* Estilo para cada habilidad */
+.skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #2e2e2e;
+  padding: 30px;
+  border-radius: 15px;
+  width: 120px;
+  height: 150px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.icon {
+  font-size: 60px;
+  color: #fff;
+}
+
+.skill p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: white;
+  text-transform: capitalize;
+}
+
+/* Estilos para las estrellas */
+.stars {
+  display: flex;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.star {
+  font-size: 1.5rem;
+  color: #ccc;
+}
+
+.star.filled {
+  color: #FFD700;
+}
+
+/* --------------------- */
+/* 💡 MEDIA QUERIES: Responsive */
+
+/* Pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+  .skills-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+  .skills-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .skill {
+    width: 100px;
+    height: auto;
+    padding: 20px;
+  }
+
+  .icon {
+    font-size: 40px;
+  }
+
+  .skill p {
+    font-size: 1rem;
+  }
+
+  .star {
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,81 @@
+.about-me-container {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #12024f;
+    color: white;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Texto principal */
+  .about-me-text h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  
+  .about-me-text p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Efectos en el texto */
+  .highlight {
+    color: #66fcf1;
+  }
+  
+  /* Subrayado animado */
+  .underline-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .underline {
+    content: "";
+    width: 100%;
+    height: 5px;
+    background-color: #66fcf1;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transform-origin: center;
+  }
+  
+  /* Texto en movimiento */
+  .scrolling-text {
+    margin-top: 40px;
+    font-size: 1.2rem;
+    white-space: nowrap;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 50px;
+  }
+  
+  /* Filas de texto */
+  .scrolling-row {
+    display: flex;
+    gap: 50px;
+    position: absolute;
+    width: 100%;
+    font-weight: bold;
+    opacity: 0.8;
+  }
+  
+  .scrolling-row span {
+    display: inline-block;
+    padding: 0 20px;
+  }
+  
+  /* Direcciones opuestas */
+  .left {
+    top: 0;
+  }
+  
+  .right {
+    top: 30px;
+  }
+  

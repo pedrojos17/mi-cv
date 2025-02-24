@@ -1,0 +1,16 @@
+/* Oculta el cursor normal */
+body {
+  cursor: none;
+}
+
+/* Cursor personalizado */
+.custom-cursor {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background-color: #66fcf1; /* Color acorde con la página */
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s linear;
+}

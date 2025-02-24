@@ -1,0 +1,51 @@
+.footer-container {
+    text-align: center;
+    padding: 30px;
+    background: #12024f;
+    color: white;
+    border-top: 1px solid #66fcf1;
+  }
+  
+  .footer-container p {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .social-icons a {
+    color: white;
+    font-size: 2rem;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #66fcf1;
+  }
+  
+  .social-icons .icon {
+    font-size: 2rem;
+  }
+  
+  /* --------------------- */
+  /* 💡 MEDIA QUERIES: Responsive */
+  
+  /* Pantallas pequeñas (móviles) */
+  @media (max-width: 768px) {
+    .footer-container p {
+      font-size: 1.2rem;
+    }
+  
+    .social-icons {
+      gap: 20px;
+    }
+  
+    .social-icons .icon {
+      font-size: 1.8rem;
+    }
+  }
+  

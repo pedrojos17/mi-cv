@@ -1,0 +1,111 @@
+.projects-container {
+  text-align: center;
+  padding: 60px 20px;
+  background: #12024f;
+  color: white;
+}
+
+.projects-container h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 40px;
+}
+
+/* Contenedor de tarjetas de proyectos */
+.projects-cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+/* Estilo para cada tarjeta de proyecto */
+.project-card {
+  background-color: #2e2e2e;
+  padding: 30px;
+  border-radius: 15px;
+  width: 300px;
+  height: 220px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.project-card h3 {
+  font-size: 1.8rem;
+  color: #e0e0e0;
+}
+
+.project-card p {
+  font-size: 1.2rem;
+  color: #e0e0e0;
+  margin-bottom: 20px;
+}
+
+.project-link {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #e0e0e0;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.project-link:hover {
+  color: #66fcf1;
+}
+
+/* Icono de GitHub */
+.social-icons a {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.github-icon {
+  font-size: 2rem;  /* Tamaño adecuado */
+  color: #e0e0e0;   /* Color claro por defecto */
+  transition: color 0.3s ease;
+}
+
+.github-icon:hover {
+  color: #66fcf1;  /* Cambia a un color brillante en hover */
+}
+
+/* --------------------- */
+/* 💡 MEDIA QUERIES: Responsive */
+
+/* Pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+  .projects-container h2 {
+    font-size: 2rem;
+  }
+
+  .projects-cards {
+    gap: 20px;
+  }
+
+  .project-card {
+    width: 100%;
+    height: auto;
+  }
+
+  .project-card h3 {
+    font-size: 1.5rem;
+  }
+
+  .project-card p {
+    font-size: 1rem;
+  }
+
+  .project-link {
+    font-size: 0.9rem;
+  }
+}
