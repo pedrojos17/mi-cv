@@ -1,0 +1,96 @@
+/* Estilos base para la página */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  
+  /* Contenedor principal */
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Títulos */
+  h1, h2, h3 {
+    font-weight: 600;
+  }
+  
+  /* Media Query para pantallas más pequeñas (dispositivos móviles) */
+  @media (max-width: 768px) {
+    body {
+      padding: 10px;
+    }
+  
+    .container {
+      padding: 10px;
+    }
+  
+    /* Para la sección de habilidades */
+    .skills-icons {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+  
+    /* Para las tarjetas de proyectos */
+    .projects-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .project-card {
+      width: 100%;
+      padding: 20px;
+    }
+  
+    /* Modificando los tamaños de texto */
+    .projects-container h2, .skills-title {
+      font-size: 2rem;
+    }
+  
+    .project-card h3 {
+      font-size: 1.5rem;
+    }
+  
+    .project-card p {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Media Query para pantallas grandes (más de 768px) */
+  @media (min-width: 768px) {
+    .skills-icons {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .project-card {
+      width: 45%;
+      height: auto;
+    }
+  
+    .project-card h3 {
+      font-size: 1.8rem;
+    }
+  
+    .project-card p {
+      font-size: 1.2rem;
+    }
+  
+    .project-link {
+      font-size: 1rem;
+    }
+  }
+  

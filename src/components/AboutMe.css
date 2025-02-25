@@ -1,7 +1,7 @@
 .about-me-container {
     text-align: center;
     padding: 80px 20px;
-    background-color: #12024f;
+    background-color: hsl(252, 95%, 16%);
     color: white;
     position: relative;
     overflow: hidden;
